@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Fantastic Hotel - Best place to stay with comfort and luxury.">
+<meta name="keywords" content="hotel, booking, rooms, luxury, fantastic hotel">
+<meta name="author" content="Fred">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<title>Fantastic Hotel</title>
+
+<style>
+body{
+    margin:0;
+    background-color: white;
+    color: black;
+    font-family: Arial;
+    transition: 0.3s;
+}
+
+/* DARK MODE */
+.dark-mode{
+    background-color: #121212;
+    color: white;
+}
+
+.menus{
+    background-color: rgb(3, 3, 97);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.dark-mode .menus{
+    background-color: rgb(27, 3, 132);
+}
+
+.menus h1{
+    color: white;
+    margin: 5px;
+    font-size: 22px;
+}
+
+.nav a{
+    text-decoration: none;
+    color:white;
+    margin: 0 15px;
+}
+
+.nav a:hover{
+    color: orange;
+}
+
+.myp{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+   
+}
+
+.col{
+    background-color: gray;
+    padding: 10px;
+     box-shadow: #121212 5px 5px 5px 5px;
+}
+
+.dark-mode .col{
+    background-color: #1e1e1e;
+}
+
+.col p{
+    background-color: rgb(3, 3, 80);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    left: 160px;
+    width: 190px;
+}
+
+button{
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    margin: 10px;
+}
+
+.dark-mode button{
+    background: white;
+    color: black;
+}
+
+/* RESPONSIVE */
+@media (max-width: 780px){
+    .myp{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.col i {
+position: relative;
+left: 260px;
+bottom: 50px;
+font-size: 20px;
+}
+.col span{
+    color: red;
+}
+.col h3{
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+}
+.col a{
+     background: linear-gradient(-60deg, #1c33ff 50%, #aba005 50%);
+    color: white;
+    height: 50px;
+    width: 200px;
+    position: relative;
+    bottom: 60px;
+    left: 60px;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+}
+a:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.extraImage{
+    display: none;
+}
+.btn-container button {
+        background: linear-gradient(-60deg, #1c33ff 50%, #a29807 50%);
+        height: 50px;
+        width: 150px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="menus">
+    <h1>FANTASTIC <span style="color: orange;">HOTEL MANAGEMENT SYSTEM</span></h1>
+
+    <div class="nav">
+         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+           
+        <a href="FANTASTIC.html">Home</a>
+        <a href="FANTASTIC1.html">About</a>
+        <a href="FANTASTIC2.html">Gallery</a>
+        <a href="FANTASTIC3.html">Rooms</a>
+        <a href="FANTASTIC4.html">Contact</a>
+        <a href="FANTASTIC5.html">Reservation</a>
+    </div>
+</div>
+
+<center>
+<button onclick="toggleMode()">🌙 / ☀️ Toggle Mode</button>
+</center>
+
+<h1 style="text-align: center;">Rooms And Rates</h1>
+
+<div class="myp">
+
+<div class="col">
+<img src="9.jpg" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span>$</span>300</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+<div class="col">
+<img src="1.jpg" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span> $</span>300</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+<div class="col">
+<img src="12.jpg" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span>$</span>300</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+</div>
+
+<div class="extraImage"id="extraImages">
+<div class="myp">
+<div class="col">
+<img src="data:image/webp;base64,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" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span>$</span>350</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP.BVju4NvZK9BtzQiU9y_67gHaEY?w=313&h=185&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span> $</span>320</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP._RrbOQnTXp8r_fjp1Qa4qAHaE8?w=276&h=185&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span>$</span>400</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+</div>
+<div class="myp">
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP.tz5-o06AQsG5MiALbyCoQwHaE7?w=186&h=150&c=6&o=7&dpr=1.5&pid=1.7&rm=3" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span>$</span>500</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP.-Gwt3R7UViPVcgeaxiglmAHaE6?w=266&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span> $</span>250</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP.rCym3DaCGWp6cS4tAkMnvgHaE7?w=290&h=194&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span>$</span>500</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+</div>
+<div class="myp">
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP.RMuWdKaBcGp9F7EPH5cRyAHaE8?w=277&h=184&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span>$</span>550</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP.WUl4CRxuJnszvNshaObNKwHaEo?w=296&h=184&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span> $</span>400</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP.t2mcchPJ5qVyo0jZIPkIDQHaE8?w=338&h=184&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span>$</span>700</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+</div>
+<div class="myp">
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP.Z_Q09xr_RWyU44-BV1VctAHaFY?w=254&h=184&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span>$</span>100</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP.y51MwuBJrDsoQZjOEJJKJgHaE8?w=294&h=195&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span> $</span>200</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP.RKBPiR971XGh8_dbGsSvlAHaE5?w=297&h=195&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3.jpg" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span>$</span>170</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+</div>
+<div class="myp">
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP.qM8voXx6BYxY6_twMgciQwHaHa?w=188&h=188&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span>$</span>450</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP.Khqgy_bDUGFQ7c77rOhDyQHaE8?w=275&h=184&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span> $</span>1000</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP.V50lkijYPxh-B44Lk1FOZQHaE8?w=276&h=184&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span>$</span>500</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+</div>
+<div class="myp">
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP.wB444ovjJkTo9DPX93geQQHaEo?w=245&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span>$</span>600</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP.qruu9oxK1SAsRGA2NjVu3gHaEP?w=267&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span> $</span>1500</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP.dtj8RB31JQLMFLSigCztzwHaE7?w=275&h=183&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span>$</span>300</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+</div>
+<div class="myp">
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP.akZmgKr7_Q20K10ItJbPVwHaE8?w=297&h=198&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span>$</span>700</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP.cytU_C3m4cQkDR6t4j24vgHaE2?w=281&h=184&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span> $</span>350</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP.fguG8RI9hUIpKQq40NHP2QHaE8?w=231&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span>$</span>380</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+</div>
+<div class="myp">
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP.ddqlqDxmJl0W0yjwnLiNnwHaE8?w=230&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span>$</span>480</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+<div class="col">
+<img src="https://th.bing.com/th?q=5+Star+Hotel+Room&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=en-WW&cc=RW&setlang=en&adlt=moderate&t=1&mw=247" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span> $</span>100</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+<div class="col">
+<img src="https://th.bing.com/th/id/OIP.nE3TI-QyapUSgWgRqQln8QHaEK?w=282&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width="390"height="190">
+<p>Deluxe Room</p>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+<i class="far fa-star"></i>
+<h3><span>$</span>1100</h3>
+<a href="F.html">Book Now</a>
+</div>
+
+</div>
+</div>
+<div class="btn-container"style="text-align: center;">
+    <button onclick="seeMore()" id="seeMoreBtn">Show More</button>
+    <button onclick="hideImages()" id="seeLessBtn" style="display:none;">See Less</button>
+     <center><b> <p style="color: #fff;background: linear-gradient(-80deg, #624a04 50%,#0d0262 50px);padding: 15px;"> &copy; FANTASTIC copy right 2026 </p></b></center>
+</div>
+<script>
+function toggleMode() {
+  document.body.classList.toggle("dark-mode");
+
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem("mode", "dark");
+  } else {
+    localStorage.setItem("mode", "light");
+  }
+}
+
+window.onload = function() {
+  if (localStorage.getItem("mode") === "dark") {
+    document.body.classList.add("dark-mode");   
+  }
+}
+ function seeMore() {
+        document.getElementById("extraImages").style.display = "grid";
+        document.getElementById("seeMoreBtn").style.display = "none";
+        document.getElementById("seeLessBtn").style.display = "inline-block";
+    }
+
+    function hideImages() {
+        document.getElementById("extraImages").style.display = "none";
+        document.getElementById("seeMoreBtn").style.display = "inline-block";
+        document.getElementById("seeLessBtn").style.display = "none";
+    }
+</script>
+
+</body>
+</html>

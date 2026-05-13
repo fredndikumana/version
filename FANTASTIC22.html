@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fantastic Hotel - Gallery</title>
+
+<style>
+    /* From Uiverse.io by barisdogansutcu */ 
+svg {
+ width: 3.25em;
+ transform-origin: center;
+ animation: rotate4 2s linear infinite;
+}
+
+circle {
+ fill: none;
+ stroke: hsl(214, 97%, 59%);
+ stroke-width: 2;
+ stroke-dasharray: 1, 200;
+ stroke-dashoffset: 0;
+ stroke-linecap: round;
+ animation: dash4 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate4 {
+ 100% {
+  transform: rotate(360deg);
+ }
+}
+
+@keyframes dash4 {
+ 0% {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+ }
+
+ 50% {
+  stroke-dasharray: 90, 200;
+  stroke-dashoffset: -35px;
+ }
+
+ 100% {
+  stroke-dashoffset: -125px;
+ }
+}
+
+    body {
+        margin: 0;
+        background-color: gray;
+        font-family: Arial;
+    }
+
+    .menus {
+        background-color: rgb(3, 3, 97);
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menus h1 { color: white; margin: 5px; font-size: 22px; }
+    .menus span { color: orange; }
+
+    .nav a {
+        text-decoration: none;
+        color: white;
+        margin: 0 15px;
+        font-size: 16px;
+    }
+
+    .nav a:hover { color: orange; }
+
+    h1 { color: blue; text-align: center; }
+
+    /* Main Grid - Fixed semicolon error */
+    .gr, .p {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 10px;
+        max-width: 700px;
+        margin: 20px auto;
+    }
+
+    /* Hidden Grid */
+    .p { display: none; }
+
+    .gr img, .p img {
+        width: 100%; /* Makes images responsive within grid cells */
+        height: 200px;
+        object-fit: cover;
+        border: 2px solid white;
+    }
+
+    .btn-container {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    button {
+        background-color: blue;
+        height: 50px;
+        width: 150px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    button:hover { background-color: darkblue; }
+</style>
+</head>
+<body>
+<!-- From Uiverse.io by barisdogansutcu --> 
+<svg viewBox="25 25 50 50">
+  <circle r="20" cy="50" cx="50"></circle>
+</svg>
+<div class="menus">
+    <h1>FANTASTIC <span>HOTEL MANAGEMENT SYSTEM</span></h1>
+    <div class="nav">
+        <a href="FANTASTIC.html">Home</a>
+        <a href="FANTASTIC1.html">About</a>
+        <a href="FANTASTIC2.html">Gallery</a>
+        <a href="FANTASTIC3.html">Rooms</a>
+        <a href="FANTASTIC4.html">Contact Us</a>
+        <a href="FANTASTIC5.html">Reservation</a>
+    </div>
+</div>
+
+<h1>Our Gallery</h1>
+
+<div class="gr">
+    <img src="8.jpg" alt="room image">
+    <img src="3.png" alt="room image">
+    <img src="23.png" alt="room image">
+</div>
+
+<div class="p" id="extraImages">
+    <img src="11.jpg" alt="room image">
+    <img src="1.jpg" alt="room image">
+    <img src="12.jpg" alt="room image">
+</div>
+
+<div class="btn-container">
+    <button onclick="seeMore()" id="seeMoreBtn">Show More</button>
+    <button onclick="hideImages()" id="seeLessBtn" style="display:none;">See Less</button>
+</div>
+
+<script>
+    function seeMore() {
+        document.getElementById("extraImages").style.display = "grid";
+        document.getElementById("seeMoreBtn").style.display = "none";
+        document.getElementById("seeLessBtn").style.display = "inline-block";
+    }
+
+    function hideImages() {
+        document.getElementById("extraImages").style.display = "none";
+        document.getElementById("seeMoreBtn").style.display = "inline-block";
+        document.getElementById("seeLessBtn").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
