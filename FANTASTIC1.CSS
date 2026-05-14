@@ -1,0 +1,41 @@
+body{
+    margin:0;
+    background-color:gray;
+    font-family: Arial;
+}
+
+.menus{
+    background-color: rgb(3, 3, 97);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menus h1{
+    color: white;
+    margin: 5px;
+    font-size: 22px;
+}
+
+.menus span{
+    color: orange;
+}
+
+.nav{
+    margin-top: 5px;
+}
+
+.nav a{
+    text-decoration: none;
+    color:white;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.nav a:hover{
+    color: orange;
+}
+.grey{
+    background:linear-gradient(#a2a1a7 30%, #efb907 40%, #ea059a);
+    text-align: center;
+}
