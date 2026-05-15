@@ -1,0 +1,57 @@
+body{
+    margin:0;
+    background-image: url("12.png");
+    font-family: Arial;
+}
+
+.menus{
+    background-color: rgb(3, 3, 97);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menus h1{
+    color: white;
+    margin: 5px;
+    font-size: 22px;
+}
+
+.menus span{
+    color: orange;
+}
+
+.nav{
+    margin-top: 5px;
+}
+
+.nav a{
+    text-decoration: none;
+    color:white;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.nav a:hover{
+    color: orange;
+}
+.p2{
+    position: relative;
+    left: 690px;
+    bottom: 150px;
+
+}
+.p1 h1{
+    position: relative;
+    left: 100px;
+}
+.p2 h1{
+    position: relative;
+    left: 190px;
+}
+ ul li::before{
+    content: 👍;
+}
+li{
+    font-weight: lighter;
+}
